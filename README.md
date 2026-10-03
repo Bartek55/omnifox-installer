@@ -8,11 +8,17 @@ Official public download and release repository for OmniFox.
 
 ## Installation profiles
 
-OmniFox uses one Smart Installer. During installation, you can choose:
+OmniFox uses one Smart Installer per supported operating system. During setup,
+you can choose:
 
-- **Full** — the complete OmniFox experience, including local AI components.
-- **Lite** — reduced download and storage requirements.
-- **Browser-only** — the browser without optional local AI models.
+- **Full** — the complete OmniFox experience, including OmniFox's own local AI
+  models.
+- **Lite** — a smaller download that uses a local AI runtime you already have,
+  such as Ollama or LM Studio. You can upgrade to Full later.
+
+OmniFox is a browser with local AI, so every installation includes a local AI
+profile. A computer with less than 8 GB of memory cannot run OmniFox's smallest
+model, and setup will not continue on it.
 
 The installer recommends a profile after checking the device, but the final
 choice remains yours. Profiles can be changed later without deleting browser
@@ -20,9 +26,14 @@ profiles, bookmarks, passwords, history, settings, or other user data.
 
 ## Supported systems
 
-The first public installer will target 64-bit Windows. Signed and notarized
-macOS packages and signed Linux DEB/RPM packages will follow after they pass
-their platform release gates.
+OmniFox is being prepared for:
+
+- **Windows 10 and Windows 11, 64-bit (x64)** — Intel and AMD processors
+- **macOS 12 or later on Apple Silicon** (M1 or newer)
+
+Windows releases will be signed, and macOS releases will be signed and
+notarized, before they appear here. Intel-based Macs and Windows on ARM are not
+supported at this time. Linux packages are planned for later.
 
 Exact minimum operating-system, memory, storage, and architecture requirements
 will be published with each release.
